@@ -30,6 +30,7 @@ function mineShaft()
 	local descended = 0
 	while true do
 		mineSides()
+		turtle.digDown()
 		while turtle.attackDown() do end
 		if not go.down() then break end
 		descended = descended + 1
