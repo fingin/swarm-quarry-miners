@@ -171,10 +171,8 @@ if config.get("host") and config.get("dropoff") and config.get("swarmname") then
 					print("Getting more fuel")
 					go.goto(config.get("dropoff"))
 					dropoff()
-					while (turtle.getFuelLevel() <= needed) do
-						for i = 1, 64 do
-							turtle.suckUp()
-						end
+					while (turtle.getFuelLevel() <= needed) do	
+						turtle.suckUp()
 						miner.refuel(needed + config.get("fuelbuffer",250))
 					end
 					dropoff()

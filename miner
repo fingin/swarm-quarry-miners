@@ -51,7 +51,7 @@ function mineShaft()
 				freeslots = freeslots + 1
 			end
 		end
-		if not freeslots == 0 then
+		if freeslots > 0 then
 			turtle.digDown()
 		else
 			local oldpos = go.getPos()
