@@ -1,4 +1,7 @@
-# swarm-quarry-miners
+#swarm-quarry-miners
+
+use pastebin run WRBpLnJq
+
 HTTP controlled turtle swarm quarry
 
 A ComputerCraft system that allows you to set up cheap, efficient, scalable mining operations.
